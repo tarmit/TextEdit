@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TextEdit</title>
+
+    <!-- Linking the JS and CSS files -->
+    <link rel="stylesheet" href="textArea.css">
+    <script src="textArea.js"></script>
+</head>
+<body>
+
+    <!-- Buttons -->
+    <input type="button" value="B" onclick="mod_selection('[b]', '[/b]')"/>
+    <input type="button" value="I" onclick="mod_selection('[i]', '[/i]')"/>
+    <input type ="button" value="U" onclick="mod_selection('[u]', '[/u]')">
+    <br />
+
+    <!-- Text area -->
+    <textarea class="editor" id="text_editor"></textarea>
+    <br />
+
+    <!-- Submit Button -->
+    <input type="button" value="Show Text" onclick="view_text()"/>
+
+    <!-- empty div to put text in -->
+    <div id="view_text"></div>
+
+</body>
+</html>
