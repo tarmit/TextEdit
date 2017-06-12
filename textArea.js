@@ -38,7 +38,7 @@ function mod_selection(val1, val2){
         var selection = textArea.value.substr(textArea.selectionStart, textArea.selectionEnd - textArea.selectionStart);
         var end = textArea.value.substr(textArea.selectionEnd);
 
-        // Insert tags between the three pieces of text
+        // Insert tags between the selected text
         textArea.value = begin + val1 + selection + val2 + end;
     }
 }
